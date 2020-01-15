@@ -1,5 +1,6 @@
 import React from 'react';
 import { updateMovieSearchInput, submitMovie } from './movieSearchAction';
+import { Link } from 'react-router-dom';
         
 class MovieSearchContainer extends React.Component {
     constructor(props) {
@@ -21,8 +22,7 @@ class MovieSearchContainer extends React.Component {
             .then(response => response.json())
             .then(data => {
                 dispatch(submitMovie(data.Search))
-            })
-        
+            })     
     }
 
     render() {
@@ -47,8 +47,9 @@ class MovieSearchContainer extends React.Component {
                                     <h5>{movie.Title}</h5>
                                     <span className='movie-year'>{movie.Year}</span>
                                 </div>
-                                <button className='more-information'>More Information</button>
-
+                                <Link to={'/movie/' + movie.imdbID}>
+                                    <button className='more-information'>More Information</button>
+                                </Link>
                             </div>
 
                         ))

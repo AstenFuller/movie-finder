@@ -1,7 +1,6 @@
 const defaultState = {
     input: '',
     movie: [],
-    id: []
 }
 
 export default function MovieSearchReducer(state = defaultState, action){
@@ -20,17 +19,6 @@ export default function MovieSearchReducer(state = defaultState, action){
                 ...state,
                 movie: payload.movie,
                 input: '',
-            }
-        }
-
-        case 'UPDATE_MOVIE': {
-            return {
-                ...state,
-                movie: {
-                    ...state.movie [
-                        { movie }
-                    ]
-                }
             }
         }
 
