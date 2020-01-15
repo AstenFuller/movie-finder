@@ -27,7 +27,7 @@ class MovieSearchContainer extends React.Component {
 
     render() {
         const { movie } = this.props;
-       {console.log(movie)}
+      
         return (
             <div className='container'>
                 <h1>Movie Finder</h1>
