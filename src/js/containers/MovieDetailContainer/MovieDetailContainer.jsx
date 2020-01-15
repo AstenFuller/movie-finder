@@ -21,7 +21,7 @@ class MovieDetailContainer extends React.Component {
 
   render() {
     const { imdb } = this.props;
-    {console.log(this.props.imdb)}
+
     return (
       <div>
         <h1>Movie Detail Container</h1>
