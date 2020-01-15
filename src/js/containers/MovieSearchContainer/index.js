@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MovieSearchContainer from './movieSearchContainer';
+import MovieSearchContainer from './MovieSearchContainer';
 
     function mapStoreToProps(store) {
         return {
